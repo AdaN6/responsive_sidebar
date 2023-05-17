@@ -8,3 +8,6 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 
 ## SASS
 ```npm add -D sass```
+
+## install vue router
+```npm i vue-router```
