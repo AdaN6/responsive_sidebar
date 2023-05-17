@@ -1,10 +1,7 @@
-<script setup>
-
-</script>
 
 <template>
-<div>
-  Hey
+<div class="app">
+ <router-view />
 </div>
 </template>
 
