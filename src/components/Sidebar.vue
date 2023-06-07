@@ -3,11 +3,24 @@
         <div class="log">
             <img src="../assets/vue.svg" alt="Vue">
         </div>
+
+        <div class="menu-toggle-wrap">
+            <button class="menu-toggle">
+                <span class="material-icons" @click="ToggleMenu">keyboard_double_arrow_right</span>
+            </button>
+        </div>
     </aside>
   
 </template>
 
 <script setup>
+    import { ref } from 'vue';
+
+    const is_expanded = ref(false)
+
+    const ToggleMenu = () => {
+        is_expanded.value = !is_expanded.value
+    }
 
 
 
