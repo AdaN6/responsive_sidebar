@@ -1,5 +1,5 @@
 <template>
-    <aside>
+    <aside :class="`${is_expanded ? 'is-expanded' : ''}`">
         <div class="log">
             <img src="../assets/vue.svg" alt="Vue">
         </div>
