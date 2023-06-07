@@ -130,12 +130,16 @@ aside{
                 transition: 0.2s ease-out;
             }
 
-            &:hover {
+            &:hover, &.router-link-exact-active {
                 background-color: var(--dark-alt);
 
                 .material-icons, .text {
                     color: var(--primary);
                 }
+            }
+
+            &.router-link-exact-active {
+                border-right: 5px solid var(--primary);
             }
         }
     }
