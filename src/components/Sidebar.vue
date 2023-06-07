@@ -24,7 +24,7 @@
                 <span class="material-icons">group</span>
                 <span class="text">Team</span>
             </router-link>
-            <router-link class="button" to="/contact">
+            <router-link class="button" :to=" {name: 'Contact'}">
                 <span class="material-icons">email</span>
                 <span class="text">Contact</span>
             </router-link>
