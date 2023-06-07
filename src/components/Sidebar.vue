@@ -49,6 +49,46 @@ aside{
         }
     }
 
+    .menu-toggle-wrap {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 1rem;
+
+        position: relative;
+        top: 0;
+        transition: 0.2s ease-out;
+
+        .menu-toggle {
+            transition: 0.2s ease-out;
+
+            .material-icons {
+                font-size: 2rem;
+                color: var(--light);
+                transition: 0.2s ease-out;
+
+            }
+
+            &:hover{
+                .material-icons {
+                    color: var(--primary);
+                    transform: translateX(0.5rem);
+                }
+            }
+        }
+    }
+
+    &.is-expanded {
+        width: var(--sidebar-width);
+
+        .menu-toggle-wrap {
+            top: -3rem;
+
+            .menu-toggle {
+                transform: rotate(-180deg);
+            }
+        }
+    }
+
     @media (max-width: 768px) {
         position: fixed;
         z-index: 99;
